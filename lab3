@@ -1,20 +1,16 @@
 CREATE TABLE user(
-    id INTEGER NOT NULL PRIMARY KEY,
-    surname VARCHAR(100) NOT NULL,
-    name VARCHAR(100) NOT NULL,
-    phone VARCHAR(150) NOT NULL UNIQUE
-);
-
-CREATE TABLE organizing committee(
-    id INTEGER NOT NULL PRIMARY KEY,
-    conferenceid INTEGER NOT NULL,
-    name VARCHAR(100)
-);
-
-CREATE TABLE conference(
-    id INTEGER NOT NULL PRIMARY KEY,
+    id INTEGER NOT NULL PRIMARY KEY,     
     name INTEGER NOT NULL,
-    place INTEGER NOT NULL,
-    date INTEGER NOT NULL,
-    speakerid INTEGER NOT NULL
-);
+    surname VARCHAR(100) NOT NULL,
+    phone VARCHAR(150) NOT NULL UNIQUE);
+    INSERT INTO users (name, surname, phone)
+    VALUES ('IVAN', 'IVANOV', '+79047775428');
+    INSERT INTO users (name, surname, phone)
+    VALUES ('SASHA', 'MAZEPOV', '+79047775321');
+    INSERT INTO users (name, surname, phone)
+    VALUES ('PASHA', 'KAMEN', '+79046523341');
+    SELECT * FROM users;
+    1|IVAN|IVANOV|+79047775428
+    2|SASHA|MAZEPOV|+79047775321
+    3|PASHA|KAMEN|+79046523341
+    
